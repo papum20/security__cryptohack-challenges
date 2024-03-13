@@ -1,5 +1,8 @@
 # editor
 .vsocde/
 
+# py
+**/__pycache__/
+
 # specific challenges
 symmetric/bean_flag.png
