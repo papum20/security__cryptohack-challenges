@@ -100,7 +100,6 @@ n = randint(1, p)
 
 # Send this to Bob!
 public = double_and_add(G, n)
-print(public)
 
 # Bob's public key
 b_x = 272640099140026426377756188075937988094
@@ -110,6 +109,9 @@ B = Point(b_x, b_y)
 # Calculate Shared Secret
 shared_secret = gen_shared_secret(B, n)
 
-# Send this to Bob!
-ciphertext = encrypt_flag(shared_secret)
-print(ciphertext)
+if __name__ == '__main__':
+    print(public)
+
+    # Send this to Bob!
+    ciphertext = encrypt_flag(shared_secret)
+    print(ciphertext)
